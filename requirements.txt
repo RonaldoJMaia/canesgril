@@ -1,0 +1,14 @@
+asgiref
+Django
+pillow
+psycopg2
+PyQt6
+PyQt6-Qt6
+PyQt6_sip
+python-dotenv
+sqlparse
+tzdata
+cloudinary
+django-cloudinary-storage
+whitenoise
+gunicorn
