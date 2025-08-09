@@ -35,8 +35,6 @@ class Prato(models.Model):
         null=True 
     )
     models.ImageField(upload_to=get_file_path, blank=True)
-
     
-
     def __str__(self):
         return self.nome_prato

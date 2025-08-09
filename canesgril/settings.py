@@ -30,12 +30,12 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['.railway.app', 'localhost', '104.18.11.246', '127.0.0.1']
 
-
 # Application definition
 
 INSTALLED_APPS = [
     'usuarios',
     'churras',
+    'api',
     'funcionario',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -46,7 +46,15 @@ INSTALLED_APPS = [
     'cloudinary',
     'cloudinary.forms',
     'cloudinary.models',
-]
+    'rest_framework',
+    'rest_framework_simplejwt',
+    ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    )
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
