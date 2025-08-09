@@ -11,6 +11,7 @@ tzdata
 cloudinary
 django-cloudinary-storage
 djangorestframework
-djangorestframework-simplejwt markdown
+djangorestframework-simplejwt
+markdown
 whitenoise
 gunicorn
